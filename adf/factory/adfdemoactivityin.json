@@ -1,0 +1,9 @@
+{
+	"name": "adfdemoactivityin",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "045f12ab-378c-417c-8909-9832a796d610",
+		"tenantId": "eeaff02b-d93e-4e4a-861a-dce223e70247"
+	}
+}
