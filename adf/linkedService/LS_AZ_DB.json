@@ -16,7 +16,7 @@
 					"referenceName": "LS_AZ_KV",
 					"type": "LinkedServiceReference"
 				},
-				"secretName": "secretsqlsb"
+				"secretName": "secretsqldb"
 			}
 		}
 	}
