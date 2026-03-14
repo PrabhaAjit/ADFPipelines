@@ -12,7 +12,7 @@
 						"referenceName": "DS_CSV_ADLS",
 						"type": "DatasetReference"
 					},
-					"timeout": "0.1:00:00",
+					"timeout": "01:00:00",
 					"sleep": 10
 				}
 			},
@@ -41,6 +41,7 @@
 						"storeSettings": {
 							"type": "AzureBlobFSReadSettings",
 							"recursive": true,
+							"wildcardFileName": "*.csv",
 							"enablePartitionDiscovery": false
 						},
 						"formatSettings": {
@@ -50,7 +51,8 @@
 					"sink": {
 						"type": "DelimitedTextSink",
 						"storeSettings": {
-							"type": "AzureBlobFSWriteSettings"
+							"type": "AzureBlobFSWriteSettings",
+							"copyBehavior": "FlattenHierarchy"
 						},
 						"formatSettings": {
 							"type": "DelimitedTextWriteSettings",
